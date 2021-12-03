@@ -1,0 +1,27 @@
+SELECT * FROM 
+nhanvien as nv join dathang as dh on nv.MSNV = dh.MSNV
+join khachhang as kh on kh.MSKH = dh.MSKH
+join chitietdathang as ctdh on ctdh.SoDonDH = dh.SoDonDH 
+join hanghoa as hh on hh.MSHH = ctdh.MSHH
+JOIN hinhhanghoa as hhh on hhh.MSHH = hh.MSHH 
+JOIN loaihanghoa as lhh on lhh.MaLoaiHang = hh.MaLoaiHang
+where dh.MSKH = 1 and dh.SoDonDH = 1
+ORDER BY dh.SoDonDH
+
+SELECT * FROM 
+nhanvien as nv join dathang as dh on nv.MSNV = dh.MSNV
+JOIN khachhang as kh on kh.MSKH = dh.MSKH
+JOIN chitietdathang as ctdh on ctdh.SoDonDH = dh.SoDonDH 
+JOIN hanghoa as hh on hh.MSHH = ctdh.MSHH
+JOIN hinhhanghoa as hhh on hhh.MSHH = hh.MSHH 
+JOIN loaihanghoa as lhh on lhh.MaLoaiHang = hh.MaLoaiHang
+where dh.MSKH = ".$MSKH." and dh.SoDonDH = ".(int)$soDH["SoDonDH"]."
+ORDER BY dh.SoDonDH ;
+
+SELECT SoDonDH from dathang WHERE MSKH = 1
+
+number_format($Gia,0,",",".")
+
+FIX: Phan trang trong muc don hang dat mua.
+- FIX: Them chuc nang luu sau khi edit san pham
+- active cac muc ben menu ben trai
