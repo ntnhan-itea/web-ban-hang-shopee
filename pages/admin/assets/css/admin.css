@@ -1,0 +1,432 @@
+
+#main {
+
+}
+
+
+#header {
+    background-color: #F6F6F6;
+}
+
+
+#header .header-bar {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: inherit;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#header .header-bar__item {
+    display: flex;
+    align-items: center;
+}
+
+#header .header-bar__home {
+    display: flex;
+}
+
+#header .header-bar__link-home {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+#header .header-bar__img {
+    margin-right: 10px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#header .header-bar__logo {
+
+}
+
+
+#header .header-bar__home-name {
+    color: #999;
+    color: var(--primary-color);
+}
+
+#header .header-bar__icon {
+    font-size: 1.8rem;
+    margin: 0 10px;
+    padding: 0 5px;
+    color: #999;
+}
+
+#header .header-bar__name {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+#header .header-bar__user {
+    cursor: pointer;
+    position: relative;
+}
+
+#header .header-bar__user:hover .header-bar__user-choose {
+    display: block;
+    z-index: 1;
+}
+
+#header .header-bar_img-user {
+
+}
+
+#header .header-bar__user-name {
+
+}
+
+#header .header-bar__user-choose {
+    background-color: #fff;
+    position: absolute;
+    top: calc(100%);
+    right: 0;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#header .header-bar__choose-item {
+    color: #666;
+    font-size: 1.4rem;
+    padding: 10px 0;
+}
+
+#header .header-bar__choose-item > a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0 15px;
+}
+
+#header .header-bar__choose-item:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: #000;
+}
+
+#header .header-bar__user-info {
+
+}
+#header .header-bar__user-logout {
+
+}
+
+
+
+
+
+#body {
+    background-color: #F6F6F6;
+}
+
+#body .category {
+    background-color: #fff;
+    padding: 16px 0 16px 5px;
+    position: fixed;
+    top: 54px;
+}
+
+#body .category-header {
+    padding: 5px 0;
+    color: #a2a2a4;
+    display: flex;
+    align-items: flex-start;
+}
+
+#body .category-header__icon {
+    width: 16px; 
+    font-size: 1.6rem;
+    margin-right: 1px;
+}
+
+#body .category-header__name {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+#body .cate-list {
+    list-style-type: none;
+    margin-bottom: 24px;
+}
+
+#body .cate-list__order {
+
+}
+
+#body .cate-list__product {
+
+}
+
+#body .cate-list__item {
+
+}
+
+#body .cate-list__item:hover a {
+    background-color: #ccc;
+    color: var(--primary-color);
+}
+
+#body .cate-list__item-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 5px 0;
+    color: #000;
+    padding-left: 18px;
+}
+
+#body .body-container {
+    background-color: #fff;
+    margin-top: 68px;
+    margin-left: 0px;
+    /* padding: 24px; */
+    /* height: 500px; */
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.4);
+}
+
+/* DISPLAY TRANG CHU */
+#body .container-home {
+    padding: 24px;
+    /* display: none; */
+}
+
+#body .container-home__title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+#body .container-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#body .container-list__item {
+    flex-basis: calc(100% / 2);
+}
+
+#body .container-list__link {
+    margin-top: 12px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 5px 0;
+    display: block;
+}
+
+#body .container-list__link:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#body .container-list__link-item {
+    text-align: center;
+}
+
+#body .container-list__link-count {
+    margin-bottom: 8px;
+    color: #2673DD;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#body .container-list__link-label {
+    font-size: 1.4rem;
+}
+
+/* DISPLAY QUAN LY DON HANG */
+/* .container-order {
+    display: none;
+}
+
+.container-nav {
+    border-bottom: 1px solid #ccc;  
+}
+
+.container-nav__list {
+    display: flex;
+}
+
+.container-nav__list-item {
+
+}
+
+.container-nav__list-item:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid red;
+}
+
+.container-nav__list-link {
+    display: block;
+    padding: 24px 36px;
+    font-size: 1.6rem;
+} */
+
+
+#body .container-detail {
+    padding: 24px;
+}
+
+#body .order-table {
+
+}
+
+#body .container-table__caption {
+    text-align: left;
+
+}
+
+#body .order-table__caption-count {
+
+}
+
+#body .container-table__edit {
+    background-color: rgb(4,170,109);
+    color: #fff;
+}
+
+#body .container-table__delete {
+    background-color: #DC3545;
+    color: #fff;
+}
+
+
+/* DISPLAY QUAN LY SAN PHAM */
+#body .container-product__all {
+    padding: 24px;
+    /* display: none; */
+}
+
+#body .container-product__add {
+    padding: 24px;
+}
+
+#body .product-add__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+#body .container-product__add input[type=text], input[type=number], textarea, select {
+    width: 50%;
+    padding: 8px 20px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#body .container-product__add input[type="reset"] {
+    background-color: #6C757D;
+    margin-left: 64px;
+}
+
+#body .container-product__add label {
+    font-size: 1.6rem;
+    font-weight: 550;
+    /* display: block; */
+}
+
+
+#body .container-product__add .btn {
+    background-color: #28A745;
+    color: #fff;
+}
+
+#body .frm__add-prd-type {
+    background-color: rgb(4,170,109);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 24px;
+}
+
+
+
+#body .container-detail {
+    /* margin-top: 30px; */
+    background-color: #fff;
+}
+
+#body .container-detail__content {
+    padding:8px 24px;
+}
+
+#body .container-detail__item {
+    /* padding: 24px 0; */
+
+}
+
+#body .container-detail__header {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+#body .container-detail__label {
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+
+}
+
+#body .container-detail__trangthai {
+    padding: 5px 10px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+#body .container-detail__sanpham {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+   
+}
+
+#body .container-detail__sanpham + .container-detail__sanpham {
+    border-top: 1px solid #ccc;
+}
+
+#body .container-detail__sanpham-img {
+    height: 80px;
+    width: 80px;
+}   
+
+#body .container-detail__sanpham-img--img {
+    height: 100%;
+    width: 100%;
+}
+
+#body .container-detail__sanpham-mota {
+
+}
+
+#body .container-detail__sanpham-name {
+
+}
+
+#body .container-detail__sanpham-quantity {
+    margin-top: 16px;
+}
+
+#body .container-detail__sanpham-total {
+    display: flex;
+    align-items: center;
+}
+
+#body .container-detail__tongtien {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#body .container-detail__total {
+    margin-left: 10px;
+}

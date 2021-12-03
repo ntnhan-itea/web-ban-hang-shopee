@@ -1,0 +1,297 @@
+/* RESET CSS FOR PROJECT */
+
+
+/* Tao bien trong CSS */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #555;
+    --primary-color: #ee4d2d;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --container-height: calc(var(--header-height) - var(--navbar-height));
+    --btn-height: 34px;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%; 
+    /* 1.6rem = 16px */
+    line-height: 1.6rem;
+    /* Truc chu ko chan */
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;
+}
+
+* {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    /* display: block; */
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+table {
+    width: 100%;
+    margin-top: 30px;
+}
+th {
+    height: 52px;
+    background-color: rgba(15, 110, 182, 0.3);
+    border: 1px solid #999;
+}
+tr:nth-child(odd) {
+    background-color: rgba(233, 240, 240, 0.4);
+}
+td {
+    font-size: 1.3rem;
+    height: 2.5rem;
+    padding: 8px 4px;
+}
+caption {
+    padding: 18px 0;
+}
+
+pre {
+
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.clss_display_none {
+    
+    --display-: none;
+
+    width: 100px !important; 
+    display: var(--display-) !important;
+}
+
+
+.frm-label {
+    font-size: 1.4rem;
+    color: rgb(85, 85, 85, 0.8);
+}
+
+
+.frm-input {
+    height: 40px;
+    padding: 10px;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.14);;
+    border-radius: 2px;
+    color: #222;
+    box-shadow: 0 2px 0 0 rgb(0, 0, 0, 0.02);
+    width: 100%;
+    margin-top: 6px;
+}
+
+.frm-input--focus:focus {
+    border-color: rgba(0, 0, 0, 0.54);
+}
+
+
+.border-right-navbar-header {
+    border-right: 2px solid hsla(0,0%,100%,.22) !important;
+}
+
+
+.container-order {
+    /* display: none; */
+}
+
+.container-nav {
+    border-bottom: 1px solid #ccc;  
+}
+
+.container-nav__list {
+    display: flex;
+}
+
+.container-nav__list-item.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.container-nav__list-item:hover {
+    /* color: var(--primary-color);
+    border-bottom: 2px solid red; */
+    background-color: rgba(205, 205, 205, 0.3);
+}
+
+.container-nav__list-link {
+    display: block;
+    padding: 24px 36px;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+/* Responsive */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test */
+.grid__col-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc((100%/12) * 2);
+}
+
+/* (1200px/12 * 10) / 5  */
+.grid__col-2-x5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(100% / 5);
+}
+
+.grid__col-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc((100%/12) * 10);
+}
+
+.display-flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Modal layout---------------------------------------- */
+.modal {
+    /* display: flex; */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.modal .overlay {
+    /* position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.modal .body {
+    margin: auto;
+    /* position: relative; */
+}
+/* End: Modal layout ---------------------------------------- */
+
+
+/* Button Style -----------------------------------*/
+.btn {
+    /* height: 34px; */
+    /* min-width: 142px; */
+    height: var(--btn-height);
+    min-width: 90px;
+    color: var(--text-color);
+    background-color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 2px;
+
+    /* display: inline-flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--danger {
+    background-color: #DC3545;
+    color: #fff;
+}
+
+.btn.btn--disabled {
+    /* color: #949494; */
+    color: var(--text-color);
+    cursor: auto;
+    background-color: #c3c3c3;
+    /* background-color: rgb(195, 195, 195, 0.6); */
+}
+
+.btn.btn--wait {
+    color: #fff;
+    background-color: #17A2B8;
+}
+
+.btn.btn--success {
+    color: #fff;
+    background-color: #28A745;
+}
+/* End: Button Styles --------------------------------*/
+
+
+/* Animation Zoom -------------------*/
+.modal .animation-zoom {
+    animation: animateZoom ease 0.3s;
+}
+/* End: Animation Zoom -------------------*/
+
+
+
+/* Keyframe ------------------- */
+@keyframes animateZoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* End: Keyframe Styles --------------------------------*/
